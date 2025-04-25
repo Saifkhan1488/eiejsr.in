@@ -5,91 +5,127 @@
   <title>Eastern Industrial Equipments</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --primary-color: #003366;
+      --secondary-color: #0077b6;
+      --light-color: #f5f5f5;
+      --dark-color: #1a1a1a;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-color);
       color: #333;
       line-height: 1.6;
     }
+
     header {
-      background-color: #1a1a1a;
+      background-color: var(--primary-color);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px 40px;
     }
+
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
+
+    header p {
+      font-size: 1.2rem;
+      color: #d0d0d0;
+    }
+
     nav {
-      background: #e0e0e0;
+      background: #eaeaea;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
+      padding: 12px 0;
     }
+
     nav a {
+      color: var(--primary-color);
       margin: 0 20px;
       text-decoration: none;
-      color: #1a1a1a;
       font-weight: bold;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1605283171341-e9298c1dd789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+    }
+
     section {
-      padding: 40px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 50px 20px;
     }
+
     section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      border-left: 5px solid #1a1a1a;
+      color: var(--primary-color);
+      border-left: 5px solid var(--secondary-color);
       padding-left: 10px;
     }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1581092787760-48d1d6489d88') no-repeat center center/cover;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 1px 1px 4px #000;
-      text-align: center;
-      padding: 20px;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-    }
+
     .products ul {
-      list-style: none;
+      list-style-type: none;
       padding-left: 0;
     }
+
     .products li {
-      background: #ffffff;
+      background: white;
       margin: 10px 0;
       padding: 15px;
-      border-left: 4px solid #1a1a1a;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 4px solid var(--primary-color);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
+
     footer {
-      background-color: #1a1a1a;
+      background-color: var(--primary-color);
       color: white;
       text-align: center;
       padding: 20px;
+      font-size: 0.95rem;
       margin-top: 40px;
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 768px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
+
       .hero h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
+
       nav {
         flex-direction: column;
+        align-items: center;
       }
+
       nav a {
         margin: 10px 0;
       }
@@ -100,7 +136,7 @@
 
   <header>
     <h1>Eastern Industrial Equipments</h1>
-    <p>Precision Metal Fabrication & Engineering Solutions</p>
+    <p>Innovating Metal Engineering & Industrial Solutions</p>
   </header>
 
   <nav>
@@ -110,20 +146,20 @@
   </nav>
 
   <div class="hero">
-    <h2>Leading the Future of Metal Industries</h2>
+    <h2>Empowering India's Metal Industry with Precision & Performance</h2>
   </div>
 
   <section id="about">
     <h2>About Us</h2>
     <p>
-      Eastern Industrial Equipments is a premier name in the metal industry, offering state-of-the-art solutions in industrial equipment, fabrication, and automation. Our commitment to innovation, quality, and customer satisfaction drives everything we do.
+      Eastern Industrial Equipments is a trusted name in the metal manufacturing and industrial engineering sector.
+      Located in Jugsalai, Jamshedpur — we specialize in designing, fabricating, and delivering high-performance metalworking machinery,
+      tools, and custom industrial solutions. Our commitment to precision, durability, and client satisfaction has made us a leading
+      force in Eastern India's industrial ecosystem.
     </p>
   </section>
 
   <section id="products" class="products">
     <h2>Our Products</h2>
     <ul>
-      <li>Sheet Metal Fabrication Units</li>
-      <li>Heavy-Duty Hydraulic Presses</li>
-      <li>Automated Welding Systems</li>
-      <li
+      <li>Heavy-Duty Metal
