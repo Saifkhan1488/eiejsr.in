@@ -3,45 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <title>Eastern Industrial Equipments</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #003366;
+      background-color: #1a1a1a;
       color: white;
-      padding: 20px 0;
+      padding: 40px 20px;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
     }
     nav {
-      text-align: center;
-      margin: 10px 0;
+      background: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
     }
     nav a {
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
-      color: #003366;
+      color: #1a1a1a;
       font-weight: bold;
     }
     section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
-    footer {
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #1a1a1a;
+      padding-left: 10px;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581092787760-48d1d6489d88') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
       text-align: center;
       padding: 20px;
-      background-color: #003366;
-      color: white;
     }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .products ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .products li {
+      background: #ffffff;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 4px solid #1a1a1a;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
@@ -49,7 +100,7 @@
 
   <header>
     <h1>Eastern Industrial Equipments</h1>
-    <p>Your Partner in Industrial Innovation</p>
+    <p>Precision Metal Fabrication & Engineering Solutions</p>
   </header>
 
   <nav>
@@ -58,31 +109,21 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <div class="hero">
+    <h2>Leading the Future of Metal Industries</h2>
+  </div>
+
   <section id="about">
     <h2>About Us</h2>
-    <p>Eastern Industrial Equipments is a leading provider of high-quality machinery and equipment for various industrial sectors. With decades of experience, we offer reliable solutions tailored to our clients' specific needs.</p>
+    <p>
+      Eastern Industrial Equipments is a premier name in the metal industry, offering state-of-the-art solutions in industrial equipment, fabrication, and automation. Our commitment to innovation, quality, and customer satisfaction drives everything we do.
+    </p>
   </section>
 
-  <section id="products">
+  <section id="products" class="products">
     <h2>Our Products</h2>
     <ul>
-      <li>Hydraulic Press Machines</li>
-      <li>Industrial Lifting Equipment</li>
-      <li>Custom Fabrication Tools</li>
-      <li>Automation and Control Systems</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@easternindustrialeq.com</p>
-    <p>Phone: +1 (555) 123-4567</p>
-    <p>Address: 456 Industrial Avenue, Springfield, USA</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Eastern Industrial Equipments. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+      <li>Sheet Metal Fabrication Units</li>
+      <li>Heavy-Duty Hydraulic Presses</li>
+      <li>Automated Welding Systems</li>
+      <li
