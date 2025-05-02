@@ -1,80 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Eastern Industrial Equipments</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Corp | Innovative Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<header>
-  <nav>
-    <a href="index.html" class="brand">Eastern <span>Industrial</span> Equipments</a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section id="home" class="welcome-hero">
-  <div class="container">
-    <div class="welcome-hero-txt">
-      <h2>Precision Metal Solutions <br> Engineered for Excellence</h2>
-      <p>Supplying top-grade industrial metal components and machinery nationwide.</p>
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Acme Corp</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="#products" class="text-gray-700 hover:text-indigo-600">Products</a>
+        <a href="#about" class="text-gray-700 hover:text-indigo-600">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="products" class="explore">
-  <div class="container">
-    <h2>Our Products</h2>
-    <p>Explore our range of industrial metal equipment</p>
-    <div class="product-list">
-      <div class="product-item">
-        <h3>Sheet Metal Fabrication</h3>
-        <p>High-quality fabricated metal sheets for industrial use.</p>
-      </div>
-      <div class="product-item">
-        <h3>Precision Machined Parts</h3>
-        <p>Engineered components with micron-level accuracy.</p>
-      </div>
-      <div class="product-item">
-        <h3>Structural Steel Supplies</h3>
-        <p>Robust steel for construction and infrastructure projects.</p>
+  <!-- Hero -->
+  <section class="bg-indigo-600 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Innovative Solutions for Modern Business</h2>
+    <p class="mb-6 text-lg">Explore our range of products designed to help your business grow.</p>
+    <a href="#products" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Browse Products</a>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold text-center mb-12">Our Products</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/300x200" alt="Product 1" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold mb-2">Product One</h4>
+          <p class="text-gray-600 mb-4">A powerful tool to streamline your workflow and increase productivity.</p>
+          <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More →</a>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/300x200" alt="Product 2" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold mb-2">Product Two</h4>
+          <p class="text-gray-600 mb-4">Innovative features to take your business to the next level.</p>
+          <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More →</a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/300x200" alt="Product 3" class="mb-4 rounded">
+          <h4 class="text-xl font-semibold mb-2">Product Three</h4>
+          <p class="text-gray-600 mb-4">A reliable and secure platform built for modern enterprises.</p>
+          <a href="#" class="text-indigo-600 font-semibold hover:underline">Learn More →</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Custom Metal Fabrication</li>
-      <li>CAD Design & Prototyping</li>
-      <li>On-site Installation Support</li>
-    </ul>
-  </div>
-</section>
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-6">About Acme Corp</h3>
+      <p class="max-w-2xl mx-auto text-gray-700">
+        Acme Corp is a leader in business innovation, offering cutting-edge products and services that empower companies around the globe. With a commitment to excellence and a passion for progress, we help our clients achieve their goals and drive transformation.
+      </p>
+    </div>
+  </section>
 
-<section id="contact" class="subscription">
-  <div class="container">
-    <h2>Get in Touch</h2>
-    <form>
-      <input type="email" placeholder="Your Email">
-      <button type="submit">Contact Us</button>
-    </form>
-  </div>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold text-center mb-6">Get in Touch</h3>
+      <form class="max-w-xl mx-auto bg-white p-8 rounded shadow">
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold">Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-3 py-2" required>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded px-3 py-2" required>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold">Message</label>
+          <textarea class="w-full border border-gray-300 rounded px-3 py-2" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Eastern Industrial Equipments. All rights reserved.</p>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-600">
+    &copy; 2025 Acme Corp. All rights reserved.
+  </footer>
 
 </body>
 </html>
